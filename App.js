@@ -16,6 +16,6 @@ function App() {
   );
 }
 
-// app.js
+
 export default App;
 
