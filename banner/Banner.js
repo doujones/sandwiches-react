@@ -6,4 +6,5 @@ background-image: url("imgs/sandwich1.jpeg");
 background-position: center center;
 background-size: cover;
 filter: contrast(65%);
+width: 100vh;
 `

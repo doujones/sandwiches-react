@@ -22,7 +22,7 @@ background-color: ${purple};
 color: ${white};
 padding: 10px;
 position: fixed;
-width: 100%;
+width: 100vh;
 z-index: 999;
 `
 

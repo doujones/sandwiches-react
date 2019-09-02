@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 body{
 font-family: 'Roboto', sans-serif;
 font-family: 'Livvic', sans-serif;
@@ -14,3 +14,4 @@ h1, h2, h3{
 font-family: 'Montserrat', sans-serif;
 }
 `
+
