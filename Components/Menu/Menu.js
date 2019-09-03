@@ -8,15 +8,19 @@ margin: 0px 400px 50px 21px;
 height: 1000px;
 `
 
-export function Menu(){
+export function Menu({ setOpenSesame }){
   return (
     <Menu2>
-    {Object.entries(texts).map(([sectionName, texts]) =>(
+    {Object.entries(texts).map(([ sectionName, texts]) =>(
     <>
-    <h1>{sectionName}</h1>
+  <h1>{sectionName}</h1>
   <Nike>
   {texts.map(nike1 => (
-   <Nike1 img={nike1.img}>
+   <Nike1
+   img={nike1.img} 
+   onClick={() =>{
+     setOpenSesame(nike1.name);
+   }}>
    <NikeOneLabel>{nike1.name}</NikeOneLabel>
    </Nike1>
   ))}

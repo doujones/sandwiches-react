@@ -6,12 +6,17 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 60px;
 `
+export const NikeOneLabel = styled(Title)`
+position: absolute;
+background-color: rgba(255, 255, 255, 0.8);
+padding: 5px;
+`
 
-export const Nike1 = styled(Title)`
+export const Nike1 = styled.div`
 height: 100px;
 padding: 10px;
 font-size: 20px;
-background-image: ${({img}) => `url(${img});`}
+background-image: ${({img}) => `url(${img});`};
 background-position: center;
 background-size: cover;
 filter: contrast(75%);
@@ -29,8 +34,3 @@ box-shadow: 1px 0px 10px 0px orange;
 }
 `
 
-export const NikeOneLabel = styled.div`
-position: absolute;
-background-color: white;
-padding: 5px;
-`
