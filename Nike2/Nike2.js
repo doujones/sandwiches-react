@@ -1,17 +1,45 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NikeOneLabel } from '../Nike/Nike'
+import { orangeRed } from '../CSS/Cascade'
+import {Title} from "../CSS/title"
 
 
 // Modal
 const Hello = styled.div`
  width: 500px;
- background-color: rgba(255,255,255,0.8);
+ background-color: white;
  position: fixed; 
  top: 75px;
  z-index: 5;
  max-height: calc(100% - 100px);
  left: calc(50% - 250px);
+ display: flex;
+ flex-direction: column;
+`
+export const NikeContent = styled.div`
+overflow: auto;
+min-height: 100px;
+`
+
+// Footer
+export const NikeFooter = styled.div`
+height: 60px;
+box-shadow: 0px -2px 20px 0px purple;
+display: flex;
+justify-content: center;
+`
+
+export const SubmitButton = styled(Title)`
+margin: 10px;
+color: white;
+height: 20px; 
+border-radius: 5px;
+padding: 10px;
+text-align: center;
+width: 200px;
+cursor: pointer;
+background-color: ${orangeRed};
 `
 
 const HelloShadow = styled.div`
@@ -51,6 +79,11 @@ padding: 5px 40px;
     <NikeBanner img={openSesame.img}>
     <Nike2BannerName>{openSesame}</Nike2BannerName>
     </NikeBanner>
+    <NikeContent>
+      <NikeFooter>
+      <SubmitButton>Place Your Order</SubmitButton>
+      </NikeFooter>
+    </NikeContent>
     </Hello>
     </>
   );
